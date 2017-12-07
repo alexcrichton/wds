@@ -1,12 +1,12 @@
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Tangerine"
+    <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine"
           rel="stylesheet">
     <style>
       body {
-        margin-top: 50px;
+        margin-top: 20px;
 	text-align: center;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Lora', serif;
       }
 
       #monogram {
@@ -16,14 +16,15 @@
       p {
         font-size: 250%;
         padding: 0;
-        margin: 20px;
+        margin: 0;
       }
 
       #msg .small {
         font-size: 120%;
       }
 
-      hr {
+      .line {
+        margin: 20px auto;
         width: 50%;
       }
 
@@ -39,13 +40,15 @@
 
     <p>June 3, 2018</p>
 
-    <hr/>
+    <div class='line'>
+      <hr/>
+    </div>
 
     <div id='msg'>
       <p>SAVE THE DATE</p>
-      <p class='small'>for the wedding of</p>
+      <p class='small' style='margin:20px'>for the wedding of</p>
       <p class='fancy'>Alex Crichton</p>
-      <p class='small'>and</p>
+      <p class='small' style='margin:0px;'>and</p>
       <p class='fancy'>Minh Le</p>
     </div>
   </body>
