@@ -2,12 +2,11 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine"
           rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
     <style>
-      body {
+      img {
         margin-top: 20px;
-	text-align: center;
-        font-family: 'Lora', serif;
-      }
+        }
 
       #monogram {
         height: 450px;
@@ -36,22 +35,36 @@
     </style>
   </head>
   <body>
+
+    <div id='menu'>
+    <ul>
+       <li class='active'><a href='index.html'><span>Home</span></a></li>
+       <li><a href='ceremony.html'><span>Ceremony</span></a></li>
+       <li><a href='reception.html'><span>Reception</span></a></li>
+       <li><a href='hotel.html'><span>Hotel</span></a></li>
+       <li class='last'><a href='https://goo.gl/forms/d1ahfOmqaf4uagkx1'>
+           <span>RSVP</span></a></li>
+    </ul>
+    </div>
+
     <img id='monogram' src='monogram.png' />
 
     <p style='font-size:280%'>June 3, 2018</p>
-    <p style='font-size:100%'> Des Moines, Iowa
-        &middot;
-        <a href='more-details.html'>more details</a></p>
+    <p style='font-size:100%'> Des Moines, Iowa</p>
+
     <div class='line'>
       <hr/>
     </div>
 
     <div id='msg'>
-      <p><a href='https://goo.gl/forms/d1ahfOmqaf4uagkx1'>RSVP</a></p>
-      <p class='small' style='margin:20px'>for the wedding of</p>
+      <p class='small' style='margin:20px'>
+       <a href='https://goo.gl/forms/d1ahfOmqaf4uagkx1'>
+           <span>RSVP</span></a>
+      for the wedding of</p>
       <p class='fancy'>Alex Crichton</p>
       <p class='small' style='margin:0px;'>and</p>
       <p class='fancy'>Minh Le</p>
     </div>
+
   </body>
 </html>
