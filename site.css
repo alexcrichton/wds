@@ -5,10 +5,12 @@ body {
   font-family: 'Lora', serif;
 }
 #menu {
-  background: black;
+  /* background: black; */
   width: auto;
   padding-top: 4px;
   padding-bottom: 4px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   /* width: 50%; */
 }
 #menu ul {
@@ -39,7 +41,7 @@ body {
   text-align: center;
 }
 #menu ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   padding: 15px 25px;
@@ -55,31 +57,36 @@ body {
   transition: color .25s;
 }
 #menu ul li a:hover {
-  color: #eee;
+  color: #222;
 }
-#menu ul li a:hover:before {
-  width: 100%;
+#menu ul li a:hover span:before {
+  width: 120%;
 }
 #menu ul li a:after {
   content: "";
   display: block;
   position: absolute;
-  right: -3px;
-  top: 19px;
-  height: 6px;
-  width: 6px;
-  background: #fff;
-  opacity: .5;
+  right: -12px;
+  top: 6px;
+  height: 31px;
+  width: 20px;
+  background-image: url("flurdilee.png");
+  background-size: 69px;
+  background-position-x: 22px;
 }
-#menu ul li a:before {
+#menu ul li a span:before {
   content: "";
   display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
+  position: relative;
+  left: -5px;
+  bottom: -20px;
+  height: 2px;
   width: 0;
-  background: #eee;
+  background: white;
+  background-image: linear-gradient(to right, black 50%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 8px 10px;
+  background-repeat: repeat-x;
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
@@ -91,10 +98,10 @@ body {
   display: none;
 }
 #menu ul li.active a {
-  color: #eee;
+  color: #222;
 }
-#menu ul li.active a:before {
-  width: 100%;
+#menu ul li.active a span:before {
+  width: 120%;
 }
 #menu.align-right li.last > a:after,
 #menu.align-right li:last-child > a:after {
